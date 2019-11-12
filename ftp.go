@@ -258,7 +258,7 @@ func (c *ServerConn) Login(user, password string) error {
 	}
 
 	// Switch to UTF-8
-	err = c.setUTF8()
+	// err = c.setUTF8()
 
 	// If using implicit TLS, make data connections also use TLS
 	if c.options.tlsConfig != nil {
